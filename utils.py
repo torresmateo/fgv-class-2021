@@ -66,7 +66,7 @@ def plot_ex4(interventions_unique, drugs, trials):
     sns.lineplot(data=dates.sort_index().cumsum().reset_index(), x='date', y='count', ax=ax)
     ax.set_xlabel('Year')
     ax.set_ylabel('number of clinical trials')
-    #fig.savefig('ex4.png')
+    fig.savefig('ex4.png')
     plt.show()
     plt.close('all')
     print(f'Number of Interventions: {len(interventions_unique)}')
